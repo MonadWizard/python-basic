@@ -1,0 +1,8 @@
+Practical Python and OpenCV by Adrian Rosebrock => 30 page
+
+
+pyOOP : 21.21
+
+
+
+need to know : import argparse

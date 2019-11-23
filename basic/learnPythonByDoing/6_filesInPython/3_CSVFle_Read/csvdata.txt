@@ -1,0 +1,5 @@
+name,age,university,degree
+Rakib,24,mit,computer scince
+Rasid,16,high school,scince
+Akfa,45,house,wife
+Bakul,57,house,husband

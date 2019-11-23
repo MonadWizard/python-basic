@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow#MainWindow
+{
+	/*background-color:rgb(195,223,255);*/
+	background-image: url('H:/Github/PythonScripts/PyQtDesigner/WebScrapper/bg.png');
+ 	background-position: center; /* Center the image */
+	background-repeat: no-repeat;
+    background-size: cover;
+              
+	
+}
+
+
+QWidget#centralwidget
+{
+
+}
+
+QLabel
+{	
+	color:rgb(255,255,255);
+}
+
+QRadioButton
+{
+	color:rgb(255,255,255);
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QListWidget" name="listWidgetMain">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>481</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetLogs">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>60</y>
+      <width>461</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonGetInput">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>630</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Get </string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditUrl">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>490</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditSource">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonClearLogs">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>630</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear logs</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonSaveLogs">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>630</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Save Logs</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonFirst">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>540</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Firs page</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonStop">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>630</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonAll">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>540</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>All pages</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelMain">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>Command Logs</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelLog">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>20</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="text">
+     <string>Source logs</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Website url :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>540</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Xpath  :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonClear">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>630</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGuide">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <addaction name="actionGuide"/>
+   </widget>
+   <addaction name="menuGuide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGuide">
+   <property name="text">
+    <string>Guide</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
