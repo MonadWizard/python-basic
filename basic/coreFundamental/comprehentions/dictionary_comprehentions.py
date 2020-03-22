@@ -1,4 +1,4 @@
-#square={1:1, 2:4, 3:9}
+# variable = {key:value for key in range()}
 square = {num:num**2 for num in range(1,11)}
 print(square)
 
@@ -19,6 +19,5 @@ word_count = {charect : str.count(charect) for charect in str }
 print(word_count)
 
 
-
-
-
+count = {c: str.count(c) for c in ('I am Rakib')}
+print(count)

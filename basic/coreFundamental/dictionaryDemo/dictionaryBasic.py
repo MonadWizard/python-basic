@@ -128,3 +128,43 @@ del data
 # print (data)   #will show an error since dictionary is deleted.  .............................................
 
 
+
+# implementation different type of  Dictionary
+
+my_set = {1,2,3}
+my_dict = { 'name':'Rakib', 'age':24, 'gender':'male' }
+another_dict = { 1:15, 2:30, 3:150 }
+
+# tupple inside a dictionary
+lottery_player = {
+    'name': 'Rasid',
+    'number': (13, 45, 66, 23, 22)
+}
+
+# dictionary inside a list
+universities = [
+    {
+        'name': "DIU",
+        'location': "Ashulia"
+    },
+    {
+        'name': "MIT",
+        'location': "US"
+    }
+    
+]
+
+# sum of lottery palyer
+print("sum of lottery number: ",sum(lottery_player['number']))
+
+# change the name of lottery palyer
+lottery_player['name'] = 'Rouf'
+# change the number of lottery palyer
+lottery_player['number'] = (1,2,3,4,5,6)
+
+print(lottery_player)
+
+
+
+
+

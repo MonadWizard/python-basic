@@ -2,7 +2,20 @@
 Method need "self" reference paramenet  but function don't need self reference parameter
 """
 
-
+class LoteryPlayer:
+    def __init__(self):
+        self.name = "Rasid"
+        self.number = (5,4,56,7,5,14)
+        
+    # inside a class by using method , we can access self variable
+    def total(self):
+        return sum(self.number)
+        
+        
+player = LoteryPlayer()
+print(player.name)
+print(player.number)
+print(player.total())
 
 
 

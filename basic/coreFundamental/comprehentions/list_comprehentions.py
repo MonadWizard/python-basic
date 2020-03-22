@@ -24,6 +24,10 @@ print(new2_2)
 new3_3=[n for n in nums if n%2==0]
 print(new3_3)
 
+# In boolean
+newww = [n%2==0 for n in nums]
+print(newww)
+
 
 #(letter ,number) pare.('a,b,c,d)(0,1,2,3) 
 new_4 =[]
