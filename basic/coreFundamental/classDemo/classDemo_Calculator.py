@@ -1,3 +1,4 @@
+'''
 class calculator:
 
     def addition(x, y):
@@ -17,7 +18,9 @@ class calculator:
 
 
 calculator.multiplication(3, 5)
+calculator.addition(4,5)
 
+'''
 
 def addition(x, y):
     added = x + y
@@ -40,7 +43,7 @@ def division(x, y):
 
 subtraction(3,5)
 multiplication(3,5)
-calculator.division(3,5)
+# calculator.division(3,5)
 
 
 if __name__ == '__main__':  # module

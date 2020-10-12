@@ -1,7 +1,8 @@
 data1=[1,2,3,4]
 data2=['x','y','z']
+
 print (data1[0])
-print (data1[0:2])
+print (data1[0:2])  # list(start, end+1)
 print (data2[-3:-1])
 print (data1[0:])
 print (data2[:2])
@@ -22,7 +23,13 @@ print("data1 * 5 : \n", data1*5)
 print("""
 """)
 
+a = []
+for i in data1:
+    a.append(i*5)
+    
+    print(i)
 
+print(a)
 
 
 #### A subpart of a list can be retrieved on the basis of index. This subpart is known as list slice.
@@ -61,5 +68,15 @@ del data1[3]
 print("del data1[3]",data1)
 del data1[0:3]
 print("del list[0:3] : ",data1)
+
+
+
+
+a = [1,2,3,4]
+a.append(10)
+print(a)
+
+
+
 
 

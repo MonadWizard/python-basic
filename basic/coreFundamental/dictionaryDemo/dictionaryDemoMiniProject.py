@@ -45,7 +45,8 @@ False
 """
 
 d = {"Bakul": 56, "Akfa": 40, "Rakib": 25, "Rasid": 17}
-inp3 = int(input("type 1 for Add person data 2 for search name to see age "))
+inp3 = int(input('''type 1 for Add person data 2
+                 for search name to see age '''))
 
 if inp3 == 1:
     inp = input("Enter person name : ")

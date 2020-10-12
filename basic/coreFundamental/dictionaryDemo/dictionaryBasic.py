@@ -46,13 +46,16 @@ print("Profession of 2nd employer:", data2['Profession'])
 print("""
 """)
 
+
+print("KEYS", data1.keys())
+print("VALUES", data1.values())
+
+
 print("Value", data1['Id'])
 print("Value", data1.get('Id'))
 print("""
 """)
 
-print("KEYS", data1.keys())
-print("VALUES", data1.values())
 
 for a in data1:
     print("{f} ==>> {n}".format(f=a,n=data1[a]))
@@ -64,6 +67,14 @@ print("""
 ................................................................................................""")
 for key in data1:                                           #display total key and value serially
     print("On data1 => key:",key,"\t=> value:",data1[key])
+
+
+
+print(data1)
+print(data1.keys())
+print(data1['Name'])
+
+
 
 
 

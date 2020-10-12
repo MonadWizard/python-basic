@@ -2,6 +2,29 @@
 list_2 = [x for x in range(5)]
 print(list_2)
 
+
+
+
+list_3 = []
+for x in range(5):
+    list_3.append(x)
+    
+    
+list_3 =[x for x in range(5)]
+    
+print(list_3)
+
+
+
+
+
+
+
+
+
+
+
+
 # create a list 5 to 10 by difference 2
 list_1 = [x for x in range(5,10,2)]
 print(list_1)
@@ -13,7 +36,7 @@ print(even_list)
 
 # normalize list in lower case
 people = ['Rouf', 'Ana', 'Rakib', 'Rasid']
-lower = [p.strip().lower() for p in people ]
+lower = [p.lower() for p in people ]
 print(lower)
 
 
